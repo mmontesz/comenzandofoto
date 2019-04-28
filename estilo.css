@@ -31,8 +31,7 @@ img{
   background-color: #82c3a6;
 }
 .contenido{
-  display: flex;
-  flex-direction: row;
+  display: inline-table;
   width: 100%;
   height: 100%;
   background-color: #d5c75f;
@@ -40,13 +39,21 @@ img{
   padding: 2px;
   text-align: center;
 }
+.paisajes{
+  display: table-row;
+  margin: 5%;
+}
+.retratos{
+  display: grid;
+}
 footer{
-  display: flex;
-  flex-direction: column;
+  display: table;
   margin: 5%;
   width: 100%;
   height: 100%;
   padding: 4px;
   background-color: #C6d5c5;
-
+}
+h2{
+  display: table-cell;
 }
