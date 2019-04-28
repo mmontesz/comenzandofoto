@@ -1,0 +1,59 @@
+@@font-face {
+  font-family: 'Dancing Script', cursive;
+}
+body{
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;
+}
+header{
+  background-color: #5b7989;
+  color: white;
+  text-shadow: 2px #02010a;
+  height: 75px;
+  font-size: 40px;
+  padding: 10px;
+}
+nav{
+  float: right;
+}
+a{
+  color: white;
+}
+img{
+  width: 50%;
+  height: 50%;
+}
+#imagencentral{
+  height: 33%;
+  width: 90%;
+  padding: 4px;
+  margin: 5%;
+  background-color: #82c3a6;
+}
+.contenido{
+  display: inline-table;
+  width: 100%;
+  height: 100%;
+  background-color: #d5c75f;
+  border: solid 1px;
+  padding: 2px;
+  text-align: center;
+}
+.paisajes{
+  display: table-row;
+  margin: 5%;
+}
+.retratos{
+  display: grid;
+}
+footer{
+  display: table;
+  margin: 5%;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  background-color: #C6d5c5;
+}
+h2{
+  display: table-cell;
+}
