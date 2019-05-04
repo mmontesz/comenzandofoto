@@ -23,6 +23,7 @@ img{
   width: 50%;
   height: 50%;
 }
+
 #imagencentral{
   height: 33%;
   width: 90%;
@@ -31,7 +32,8 @@ img{
   background-color: #82c3a6;
 }
 .contenido{
-  display: inline-table;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   background-color: #d5c75f;
@@ -39,21 +41,62 @@ img{
   padding: 2px;
   text-align: center;
 }
+#imagen1:hover{
+  transform: rotate(10deg);
+}
+#imagen2:hover{
+  transform: translateX(20px) translateY(5px);
+}
 .paisajes{
-  display: table-row;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d5c75f;
   margin: 5%;
+  padding: 5px;
+}
+#paisaje1{
+  filter: blur(10px);
+}
+#paisaje3{
+  filter: sepia(90%);
+}
+#paisaje2{
+  filter: grayscale(100%);
+}
+#paisaje4{
+  filter: grayscale(100%);
+}
+#paisaje6{
+  filter: grayscale(100%);
 }
 .retratos{
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d5c75f;
+}
+#retrato1{
+  filter: blur(10px);
+}
+#retrato3{
+  filter: sepia(90%);
+}
+#retrato2{
+  filter: grayscale(100%);
+}
+#retrato4{
+  filter: grayscale(100%);
+}
+#retrato6{
+  filter: grayscale(100%);
 }
 footer{
-  display: table;
-  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
   width: 100%;
   height: 100%;
   padding: 4px;
   background-color: #C6d5c5;
-}
-h2{
-  display: table-cell;
 }
