@@ -1,4 +1,4 @@
-@@font-face {
+@font-face {
   font-family: 'Dancing Script', cursive;
 }
 body{
@@ -12,6 +12,7 @@ header{
   height: 75px;
   font-size: 40px;
   padding: 10px;
+  border-radius: 10px 10px;
 }
 nav{
   float: right;
@@ -33,26 +34,37 @@ img{
 }
 .contenido{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
   background-color: #d5c75f;
   border: solid 1px;
-  padding: 2px;
+  padding: 5px;
   text-align: center;
+}
+.contenido>div{
+  column-count: 2;
+  column-width: 50%;
 }
 #imagen1:hover{
   transform: rotate(10deg);
 }
 #imagen2:hover{
-  transform: translateX(20px) translateY(5px);
+  transform: translateX(20px) translateY(2px);
 }
 .paisajes{
   display:flex;
   flex-direction: column;
-  align-items: center;
+
   background-color: #d5c75f;
   margin: 5%;
+  padding: 5px;
+}
+.paisajes>div{
+  column-count: 3;
+
+  height: 100%;
   padding: 5px;
 }
 #paisaje1{
@@ -73,8 +85,14 @@ img{
 .retratos{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 5%;
+  padding: 5px;
   background-color: #d5c75f;
+}
+.retratos>div{
+  column-count: 3;
+  height: 100%;
+  padding: 5px;
 }
 #retrato1{
   filter: blur(10px);
@@ -93,10 +111,27 @@ img{
 }
 footer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
   margin-top: 15px;
   width: 100%;
   height: 100%;
   padding: 4px;
   background-color: #C6d5c5;
+}
+footer>div{
+  column-count: 4;
+  column-width: 25%;
+}
+@media only screen (min-widht:900px) {
+  /* For desktop */
+  html{
+    width: 900px;
+  }
+}
+@media only screen (max-widht:900px) {
+  /*For mobile phones*/
+  html{
+    width: 100%;
+  }
 }
