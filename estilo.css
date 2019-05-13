@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Dancing Script', cursive;
 }
+
 body{
   font-family: 'Dancing Script', cursive;
   background-color: #02010a;
@@ -20,10 +21,7 @@ nav{
 a{
   color: white;
 }
-img{
-  width: 50%;
-  height: 50%;
-}
+
 
 #imagencentral{
   height: 33%;
@@ -32,20 +30,31 @@ img{
   margin: 5%;
   background-color: #82c3a6;
 }
+#imagen1{
+  height: 100%;
+  width: 100%;
+}
+#imagen2{
+  height: 100%;
+  width: 100%;
+}
 .contenido{
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
   background-color: #d5c75f;
   border: solid 1px;
   padding: 5px;
-  text-align: center;
 }
 .contenido>div{
-  column-count: 2;
-  column-width: 50%;
+  width: 100%;
+}
+.contenido>div #contenido1{
+  width: 50%;
+  height: 500px;
+}
+.contenido>div #contenido2{
+  width: 50%;
+  height: 500px;
 }
 #imagen1:hover{
   transform: rotate(10deg);
@@ -55,83 +64,121 @@ img{
 }
 .paisajes{
   display:flex;
-  flex-direction: column;
-
+  flex-direction: row;
   background-color: #d5c75f;
   margin: 5%;
   padding: 5px;
 }
 .paisajes>div{
-  column-count: 3;
-
+  width: 100%;
   height: 100%;
   padding: 5px;
 }
 #paisaje1{
+  width: 100%;
   filter: blur(10px);
 }
 #paisaje3{
+  width: 100%;
   filter: sepia(90%);
 }
 #paisaje2{
+  width: 100%;
   filter: grayscale(100%);
 }
 #paisaje4{
+  width: 100%;
   filter: grayscale(100%);
 }
+#paisaje5{
+  width: 100%;
+}
 #paisaje6{
+  width: 100%;
   filter: grayscale(100%);
 }
 .retratos{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 5%;
   padding: 5px;
   background-color: #d5c75f;
 }
 .retratos>div{
-  column-count: 3;
+  width: 100%;
   height: 100%;
   padding: 5px;
 }
 #retrato1{
+  width: 100%;
   filter: blur(10px);
 }
 #retrato3{
+  width: 100%;
   filter: sepia(90%);
 }
 #retrato2{
+  width: 100%;
   filter: grayscale(100%);
 }
 #retrato4{
+  width: 100%;
   filter: grayscale(100%);
 }
+#retrato5{
+  width: 100%;
+}
 #retrato6{
+  width: 100%;
   filter: grayscale(100%);
 }
 footer{
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;
   margin-top: 15px;
   width: 100%;
   height: 100%;
   padding: 4px;
   background-color: #C6d5c5;
 }
+
 footer>div{
-  column-count: 4;
-  column-width: 25%;
+  width: 25%;
 }
-@media only screen (min-widht:900px) {
-  /* For desktop */
-  html{
-    width: 900px;
-  }
-}
-@media only screen (max-widht:900px) {
-  /*For mobile phones*/
-  html{
+
+/*MOBILE PHONES*/
+@media only screen and (max-width:900px) {
+
+.contenido{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-  }
+    height: 100%;
+    background-color: #d5c75f;
+    border: solid 1px;
+    padding: 20px;
+}
+
+.paisajes{
+  display:flex;
+  flex-direction: column;
+  background-color: #d5c75f;
+  margin: 5%;
+  padding: 20px;
+}
+.retratos{
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 20px;
+  background-color: #d5c75f;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  background-color: #C6d5c5;
 }
